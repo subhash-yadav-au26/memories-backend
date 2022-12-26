@@ -1,6 +1,6 @@
 import * as mongoose from "mongoose";
 import { configs } from "../configs";
-const PATH = configs.DB_PATH || "";
+const PATH = process.env.DB_PATH || "";
 
 export const connect = () => {
   mongoose.connect(PATH);
