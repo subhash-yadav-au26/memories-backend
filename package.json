@@ -6,7 +6,8 @@
   "types": "bulid/index.d.ts",
   "files": [
     "bulid",
-    "package.json"
+    "package.json",
+    "package-lock.json"
   ],
   "scripts": {
     "start": "node bulid/index.js",
