@@ -1,6 +1,6 @@
 import * as mongoose from "mongoose";
-import { config } from "../config";
-const PATH = config.DB_PATH || "";
+import { configs } from "../configs";
+const PATH = configs.DB_PATH || "";
 
 export const connect = () => {
   mongoose.connect(PATH);
