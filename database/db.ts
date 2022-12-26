@@ -1,5 +1,4 @@
 import * as mongoose from "mongoose";
-import { configs } from "../configs";
 const PATH = process.env.DB_PATH || "";
 
 export const connect = () => {

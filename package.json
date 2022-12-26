@@ -2,10 +2,17 @@
   "name": "memories",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "bulid/index.js",
+  "types": "bulid/index.d.ts",
+  "files": [
+    "bulid",
+    "package.json"
+  ],
   "scripts": {
-    "start": "node index.ts",
-    "test": "nodemon index.ts"
+    "tsc": "tsc",
+    "start": "node bulid/index.js",
+    "test": "nodemon index.ts",
+    "prepare": "npm run tsc"
   },
   "author": "",
   "license": "ISC",
