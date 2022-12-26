@@ -10,9 +10,8 @@
     "package-lock.json"
   ],
   "scripts": {
-    "start": "node bulid/index.js",
-    "test": "nodemon index.ts",
-    "bulid": "tsc"
+    "start": "tsc && node bulid/index.js",
+    "test": "nodemon index.ts"
   },
   "author": "",
   "license": "ISC",
