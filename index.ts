@@ -27,6 +27,10 @@ try {
   // connected to mongodb
   connect();
 
+  app.get("delet", (req, res) => {
+    res.send("kl");
+  });
+
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./index.html"));
   });
