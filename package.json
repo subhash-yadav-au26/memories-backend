@@ -9,10 +9,9 @@
     "package.json"
   ],
   "scripts": {
-    "tsc": "tsc",
     "start": "node bulid/index.js",
     "test": "nodemon index.ts",
-    "bulid": "npm run tsc"
+    "bulid": "tsc"
   },
   "author": "",
   "license": "ISC",
