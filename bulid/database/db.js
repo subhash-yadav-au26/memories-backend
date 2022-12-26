@@ -2,6 +2,8 @@
 exports.__esModule = true;
 exports.connect = void 0;
 var mongoose = require("mongoose");
+var dotenv = require("dotenv");
+dotenv.config();
 var PATH = process.env.DB_PATH || "";
 var connect = function () {
     mongoose.connect(PATH);

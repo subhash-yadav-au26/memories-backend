@@ -1,4 +1,6 @@
 import * as mongoose from "mongoose";
+import * as dotenv from "dotenv";
+dotenv.config();
 const PATH = process.env.DB_PATH || "";
 
 export const connect = () => {

@@ -30,7 +30,7 @@ try {
   dotenv.config();
   connect();
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./index.html"));
+    res.send("wrong route");
   });
 
   const port = process.env.PORT || 8080;

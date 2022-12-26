@@ -6,7 +6,6 @@ var http = require("http");
 var busboy = require("connect-busboy");
 var busboyBodyParser = require("busboy-body-parser");
 var compression = require("compression");
-var path = require("path");
 var db_1 = require("./database/db");
 var api_1 = require("./routes/api");
 var dotenv = require("dotenv");
@@ -27,7 +26,7 @@ try {
     dotenv.config();
     (0, db_1.connect)();
     app.get("*", function (req, res) {
-        res.sendFile(path.join(__dirname, "./index.html"));
+        res.send("wrong route");
     });
     var port_1 = process.env.PORT || 8080;
     app.set("port", port_1);
