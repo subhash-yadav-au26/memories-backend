@@ -4,7 +4,7 @@ import * as http from "http";
 import * as busboy from "connect-busboy";
 import * as busboyBodyParser from "busboy-body-parser";
 import * as compression from "compression";
-import { configs } from "./configs";
+
 import * as path from "path";
 import { connect } from "./database/db";
 import { api } from "./routes/api";
